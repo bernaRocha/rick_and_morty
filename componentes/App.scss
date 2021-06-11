@@ -1,0 +1,202 @@
+html {
+  background-color: #00264d;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(54, 230, 162);
+  cursor: pointer;
+  transform: rotate(3deg);
+  font-size: 3em;
+  transform: matrix(0.786,0.8,-0.8,0.866,0,0);
+  transition-delay: 0.1s;
+  transform:translate(25px,35px)
+}
+
+/* Barra procura */
+
+.caixa-procura {
+  width: 94%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px auto 0 auto;
+
+  &__input {
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+/*    Cardlist    */
+
+.card-list {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+text-align: center;
+align-items: center;
+
+}
+
+.card{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 10px;
+
+  & img{
+    transition: 0.3s;
+    margin: 5px;
+    border-radius:15px;
+  }
+
+  &-info__id{
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+/*     Detalhe dos cards      */
+
+.card-info {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  background-color: white;
+
+  & img {
+    margin: 10px;
+    border-radius: 160px; 
+  }
+
+  &__body button {
+
+    background-color: #4CAF50;
+    border: none;
+    margin-top: 15px;
+    padding: 15px 32px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover{
+      transform: translateX(-30px);
+      font-weight: bold;
+      font-size: 1em, large;
+      font-style: italic;
+      font-family: 'Verdana', serif;
+      letter-spacing: 3px;
+      line-height: .75em;
+      transform:skew(20deg,20deg);
+      color: #ffffff;
+      
+    }
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  body {
+  background-color: rgb(54, 54, 54);
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+  }
+
+.card{
+    background-color: #afbee9;
+    justify-content: center;
+    color: rgb(3, 71, 71);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px; 
+    margin: 10px 50px;
+    font-weight: bolder;
+}
+
+.caixa-procura {
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 10px auto 0 auto;
+
+  &__input {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+}
+
+.card-info {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
+
+  & img {
+    width: 45%;
+    border-radius: 160px; 
+  }
+
+  &__body button {
+  
+    background-color: #4CAF50;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 15px 32px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  
+    & :hover{
+      transform: translateX(-30px);
+      font-weight: bold;
+      font-size: 1em, large;
+      font-style: italic;
+      font-family: 'Verdana', serif;
+      letter-spacing: 3px;
+      line-height: .75em;
+      transform:skew(20deg,20deg);
+      color: #ffffff;
+    }
+  }
+
+}
+
+
+
+
+
+
+}
